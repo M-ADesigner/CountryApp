@@ -1,0 +1,18 @@
+<h2>Por Region</h2>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <shared-search-box
+      (onValue)="searchRegion($event)"
+      placeholderInput="Busqueda por capital"
+    ></shared-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr />
+    <shared-tabla [countries]="countries"></shared-tabla>
+  </div>
+</div>
